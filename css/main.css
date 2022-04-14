@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url("../fonts/Rubik-Medium.ttf"),
+         url("../fonts/Rubik-Medium.woff"),
+         url("../fonts/Rubik-Medium.woff2");
+}
+@font-face {
+    font-family: 'Rubik';
+    src: url("../fonts/Rubik-Regular.ttf"),
+         url("../fonts/Rubik-Regular.woff"),
+         url("../fonts/Rubik-Regular.woff2");
+}
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 25px;
+    font-family: 'Rubik';
+    background-color: aliceblue;
+}
+img {
+    display: inline-block;
+}
+.container {
+    width: 1160px;
+    margin:0 auto;
+    padding:0 20px;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding:20px;
+    width:460px;
+}
+.wrapper-header {
+    font-size: 26px;
+    line-height: 31px;
+    text-align: center;
+}
+.form-label {
+    display: flex;
+    align-items: center;
+}
+.form-label + .form-label {
+    margin-top: 10px;
+}
+.form_span {
+    width: 35px;
+    height: 35px;
+    border: solid black 1px;
+    border-radius: 6px;
+}
+.form_pingpong {
+    width: 35px;
+    height: 35px;
+    border: solid black 1px;
+    border-radius: 6px;
+}
+.form_volleybol {
+    width: 35px;
+    height: 35px;
+    border: solid black 1px;
+    border-radius: 6px;
+}
+.form_xokkey {
+    width: 35px;
+    height: 35px;
+    border: solid black 1px;
+    border-radius: 6px;
+}
+.form_header {
+    margin-left: 10px;
+}
+input:checked + .form_span {
+    background-image: url("../images/basketball-ball.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+input:checked + .form_pingpong {
+    background-image: url("../images/pinpong.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+input:checked + .form_volleybol {
+    background-image: url("../images/volleybol.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+input:disabled + .form_xokkey {
+    background-image: url("../images/hockey-puck.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.visually-hidden {
+    visibility: hidden;
+}
